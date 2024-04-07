@@ -29,7 +29,7 @@ THIS_DIRECTORY_RELATIVE = Path(__file__).parent.relative_to(PROJECT_ROOT_PATH)
 # Should be "private_gpt/ui/avatar-bot.ico"
 AVATAR_BOT = THIS_DIRECTORY_RELATIVE / "avatar-bot.ico"
 
-UI_TAB_TITLE = "My Private GPT"
+UI_TAB_TITLE = "MIRONOVA GPT"
 
 SOURCES_SEPARATOR = "\n\n Sources: \n"
 
@@ -303,7 +303,7 @@ class PrivateGptUi:
             theme=gr.themes.Soft(primary_hue=slate),
             css=".logo { "
             "display:flex;"
-            "background-color: #C7BAFF;"
+            "background-color: #033055"
             "height: 80px;"
             "border-radius: 8px;"
             "align-content: center;"
@@ -317,7 +317,7 @@ class PrivateGptUi:
             "#col { height: calc(100vh - 112px - 16px) !important; }",
         ) as blocks:
             with gr.Row():
-                gr.HTML(f"<div class='logo'/><img src={logo_svg} alt=PrivateGPT></div")
+                gr.HTML(f"<div class='logo'/><h1>MIRONOVA GPT</h1></div")
 
             with gr.Row(equal_height=False):
                 with gr.Column(scale=3):
